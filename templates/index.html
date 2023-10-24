@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Programación 101</title>
+</head>
+<body>
+    <header>
+        <h1>Programación 101</h1>
+    </header>
+
+    <section id="registro">
+        <h2>Registro de Usuario</h2>
+        <form action="/register" method="post">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" name="username" required>
+            <label for="password">Contraseña:</label>
+            <label for="dni">DNI:</label>
+            <input type="text" name="dni" required>
+
+            <input type="password" name="password" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Programación 101</p>
+    </footer>
+</body>
+</html>
